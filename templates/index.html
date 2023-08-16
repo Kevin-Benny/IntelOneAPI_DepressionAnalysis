@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Depression Detection</title>
+  <link rel="stylesheet" href="../static/index.css">
+  <link rel="shortcut icon" type="x-icon" href ="../static/images/loneliness.png"> 
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="left-content">
+        <!-- <img src="{{ user_image }}" alt="logo" class="icon"> -->
+        <img src="../static/images/loneliness.png" alt="logo" class="icon">
+        <p class="headtxt">Depression Prediction</p>
+      </div>
+      <div class="right-content">
+        <ul class="nav">
+          <li class="text"><a class="text" href="#dev">Developers</a></li>
+          <li class="info"><a class="info" href="#aboutdep">Awareness</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  
+  <main>
+    <div class="background"><br><br>
+       <form action="/predict" method="POST"  class="contai">
+        <p class="headtxt" style="text-align: center;">Depression Prediction</p>
+         <div class="container">
+            <label for="newsInput" class="uptext" >Describe how you are feeling</label>
+            <textarea id="newsInput" name="newsInput" rows="4" cols="50" required></textarea>
+            <!-- <button type="submit" id="predictButton">Predict</button> -->
+            <input type = "submit" id="predictButton" value="Predict">
+            {% if result == 0 %}
+            <p id="predictionResult">Prediction Result: Not Depressed</p>
+            {% endif %}
+            {% if result == 1 %}
+              <p id="predictionResult">Prediction Result: Depressed</p>
+            {% endif %}
+          </div>
+        </form>
+          <!-- <div class="container">
+            <label for="fileInput" style="margin-left: 38%;">Upload CSV File:</label>
+            <input type="file" id="fileInput">
+            <button id="uploadButton">Upload and Predict</button>
+            <p id="filePredictionResult">File prediction will appear here</p>
+          </div> -->
+          <br>
+          
+          <div>
+            <h1  id="rid">To-Do's To Help With Depression</h1>
+            <div class="cards-containers">
+              <div class="cards">
+                  <img src="../static/images/images.jpeg" alt="Image 1">
+                  <h2>Practice Mindfulness</h2>
+                  <p>Engage in mindfulness meditation to stay present and reduce negative thoughts.</p>
+              </div>
+              <div class="cards">
+                  <img src="../static/images/download (1).jpeg" alt="Image 2">
+                  <h2>Stay Active</h2>
+                  <p>Regular exercise can boost your mood and alleviate symptoms of depression.</p>
+              </div>
+              <div class="cards">
+                  <img src="../static/images/download (2).jpeg" alt="Image 3">
+                  <h2>Connect with Others</h2>
+                  <p>Spending time with loved ones and socializing can help combat feelings of isolation.</p>
+              </div>
+              <div class="cards">
+                  <img src="../static/images/images (1).jpeg" alt="Image 4">
+                  <h2>Healthy Diet</h2>
+                  <p>Eat a balanced diet rich in nutrients to support your mental well-being.</p>
+              </div>
+              <div class="cards">
+                  <img src="../static/images/images (2).jpeg" alt="Image 5">
+                  <h2>Get Enough Sleep</h2>
+                  <p>Prioritize quality sleep to help regulate mood and reduce stress.</p>
+              </div>
+              <div class="cards">
+                  <img src="../static/images/download (3).jpeg" alt="Image 6">
+                  <h2>Seek Professional Help</h2>
+                  <p>If needed, consult a mental health professional for guidance and treatment options.</p>
+              </div>
+          </div>
+            
+          </div>
+          <div>
+
+          <footer class="developedby">
+            <h1  id="dev">Meet Our Developers</h1>
+          <main class="devcard">
+            <div class="developer-card">
+              <img src="../static/images/kenneth.jpg" alt="Developer 1">
+              <h2 style="font-size: 15px;">KENNETH LOUIS ALVARES</h2>
+              <p>Christ University,MCA</p>
+            </div>
+            <div class="developer-card">
+              <img src="../static/images/kevin.jpg" alt="Developer 2">
+              <h2 style="font-size: 15px;">KEVIN BENNY</h2>
+              <p>Christ University,MCA</p>
+            </div>
+            <div class="developer-card">
+              <img src="../static/images/aadhu.jpg" alt="Developer 3">
+              <h2 style="font-size: 15px;">ADARSH NATHANIEL</h2>
+              <p>Christ University,MCA</p>
+            </div>
+            <div class="developer-card">
+              <img src="../static/images/IMG_2415.jpg" alt="Developer 4">
+              <h2 style="font-size: 15px;">SHUBHAM RAITHATHA</h2>
+              <p>Christ University,MCA</p>
+            </div>
+          </main>
+        </footer>
+      </div>
+      <br>
+
+      
+
+          <footer id="aboutdep">
+            <div class="footer-content">
+              <div class="footer-left">
+                <h2>About Depression Awareness</h2>
+                <p class="abouttext">Depression is not just a temporary feeling of sadness. It's a complex mental health condition that can affect anyone, regardless of age, gender, or background. It goes beyond feeling blue; it can impact every aspect of a person's life.</p>
+  <p class="rec">Recognizing the signs of depression and seeking help is crucial. If you or someone you know is experiencing persistent feelings of hopelessness, fatigue, loss of interest, or changes in sleep and appetite, it's important to reach out to a mental health professional.</p>
+  <p class="rec">By spreading awareness and fostering an open dialogue about depression, we can break down the stigma and create a supportive community for those who need it.</p>
+              </div>
+              <div class="footer-right">
+                <img src="../static/images/istockphoto-1479083283-612x612.jpg" class="imgdep" alt="Depression Awareness Image">
+              </div>
+            </div>
+          </footer>
+
+
+          
+          
+  
+
+        
+  </main>
+  <!-- <script src="../static/index.js"></script> -->
+</body>
+</html>
