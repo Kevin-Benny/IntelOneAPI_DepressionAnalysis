@@ -26,7 +26,7 @@ Depression is a widespread mental health concern that affects millions of people
 
 
 - [x] Random Forest Classification --> 93%
-![image]([accuracy](https://github.com/Kevin-Benny/IntelOneAPI_MLAnalysis/blob/app.py/asset/Accuracy.PNG))
+![image](https://github.com/Kevin-Benny/IntelOneAPI_MLAnalysis/blob/app.py/asset/Accuracy.PNG)
 
 
 # Learning !!
