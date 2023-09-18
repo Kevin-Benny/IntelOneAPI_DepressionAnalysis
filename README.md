@@ -33,5 +33,13 @@ Depression is a widespread mental health concern that affects millions of people
 
 This research pioneers a depression prediction model utilizing Intel OneAPI and the Random Forest Classifier. By amalgamating biological, psychological, and sociocultural predictors, it aims to discern and forecast depressive tendencies with precision. Harnessing the parallel computing prowess of Intel OneAPI, the model ensures optimal performance for early detection and continuous monitoring, providing valuable insights for timely healthcare interventions. The study delves into feature importance analysis within the Random Forest framework, capitalizing on Intel OneAPI's capabilities to enhance variable scrutiny. Not only does this research contribute to heightened accuracy in depression prediction, but it also underscores the transformative potential of Intel OneAPI in reshaping mental health analytics. By advancing our comprehension of depression's multifaceted nature, this work endeavors to facilitate improved well-being and intervention strategies, marking a significant step forward in mental health research and technology.
 
+#Posts
+Intel Publication:
+[Link text](https://devmesh.intel.com/projects/depression-detection-using-randomforestclassifier)
+
+Medium Publication:
+[Link text](https://medium.com/@kevin.benny_71969/empowering-mental-health-through-innovative-technology-52d828c2d073)
+
+
 ![image](https://github.com/Kevin-Benny/IntelOneAPI_MLAnalysis/blob/app.py/asset/homescreen.PNG)
 ![image](https://github.com/Kevin-Benny/IntelOneAPI_MLAnalysis/blob/app.py/asset/devs.PNG)
